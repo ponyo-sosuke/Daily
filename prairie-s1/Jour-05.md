@@ -5,8 +5,8 @@
 ### Vendredi 02/12/2021
 
 
-* [ ] Créer son premier repo Github
-* [ ] Faire ses première manipulations de versionning (init, push, add, commit, status, pull)
+* [x] Créer son premier repo Github
+* [x] Faire ses première manipulations de versionning (init, push, add, commit, status, pull)
 * [ ] Découverte du Markdown : 
   * [ ] Comprendre l'intérêt du Markdown
   * [ ] Découvrir les balises de bases : 
