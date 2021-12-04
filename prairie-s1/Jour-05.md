@@ -11,13 +11,13 @@
   * [x] Comprendre l'intérêt du Markdown
   * [x] Découvrir les balises de bases : 
     * [x] Titres
-    * [ ] Images
-    * [ ] Listes
+    * [x] Images
+    * [x] Listes
     * [x] Formatage de texte (italique, souligné, gras)
     * [ ] Code
     * [ ] Citations
     * [ ] Tableaux
-    * [ ] Liens
+    * [x] Liens
   * [x] Faire le parcours "how-to-markdown" (Nodeschool.io)
 * [ ] Comprendre l'intérêt des raccourcis clavier
 * [ ] Découverte des raccourcis clavier de son système (Windows, Linux, Mac) : 
