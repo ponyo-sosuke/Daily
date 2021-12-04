@@ -18,7 +18,7 @@
     * [ ] Citations
     * [ ] Tableaux
     * [x] Liens
-  * [x] Faire le parcours "how-to-markdown" (Nodeschool.io)
+  * [ ] Faire le parcours "how-to-markdown" (Nodeschool.io)
 * [ ] Comprendre l'intérêt des raccourcis clavier
 * [ ] Découverte des raccourcis clavier de son système (Windows, Linux, Mac) : 
   * [ ] Navigateur (fenêtres, onglets, navigation, etc …)
