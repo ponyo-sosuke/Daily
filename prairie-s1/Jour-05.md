@@ -14,9 +14,9 @@
     * [x] Images
     * [x] Listes
     * [x] Formatage de texte (italique, souligné, gras)
-    * [ ] Code
-    * [ ] Citations
-    * [ ] Tableaux
+    * [x] Code
+    * [x] Citations
+    * [x] Tableaux
     * [x] Liens
   * [ ] Faire le parcours "how-to-markdown" (Nodeschool.io)
 * [ ] Comprendre l'intérêt des raccourcis clavier
