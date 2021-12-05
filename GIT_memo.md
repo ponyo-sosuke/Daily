@@ -269,3 +269,5 @@ et recuperer le lien, en ssh c'est mieux
 git remote add origin liendudossiergithub(en ssh)
 git remote -v
 git push origin main
+
+____________
