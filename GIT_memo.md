@@ -1,0 +1,204 @@
+# Débuter sur Git et Github
+
+# Commandes
+
+apt = npm
+apt install "nomlogiciel"
+'pour forcer' => sudo apt install "nomdulogiciel"
+
+cat  / interroge
+cd .
+
+ls  / liste les documents présents
+ls -lh  / voir la liste des dossiers sans fichiers cachés
+la  / voir tout
+
+rm -rf nomdossier  / efface le dossier
+
+git add .  / ajoute
+
+git branch -a  / liste toutes les branches
+
+git branch -M main  / transforme la branche de master en main
+
+git branch en alias devient
+$ git config --global alias.br = git br
+
+git commit -m "commentaire"  / valide plus commentaire de la modification apportée
+/ exemple pour visualiser le dernier commit
+en plus simple
+$ git last
+
+git init  / initialise
+
+git pull
+git pull upstream main
+
+git push  / pousse le dossier
+git push -u origin
+
+git remote -v  / verbose  concerne notre dossier
+git rm "nomfichier"  / supprime un fichier du dossier
+
+gs  / git status (alias)
+git status  / met à jour
+
+git visual / alias gitk
+/ exemple $ git config --global alias.visual "!g
+-------------------------
+
+## Création d'alias de commandes
+
+Une fois acquis les commandes et compris les actions,
+on peut commencer à créer des alias pour simplifier 
+l'écriture.
+Lire ce post :
+https://git-scm.com/book/fr/v2/Les-bases-de-Git-Les-alias-Git
+
+Pour exemple :
+
+ajouter : $ git config --global alias."motàaliaser"
+cela donnera le raccourci git "2lettres" = gs / git status
+-------------------------
+
+
+
+# Memo des actions
+
+La routine Git sur notre terminal
+-------------------------
+
+## creer un dossier
+
+mkdir nomdudossier
+cd nomdudossier
+git init
+
+tu as un dossier vide
+-------------------------
+
+## supprimer un dossier
+action à réaliser si on ne souhaite pas 
+conserver tout le contenu d'un dossier
+ou supprimer un dossier vide 
+
+rmdir nomdudossier
+
+sinon on peut supprimer un sous-dossier (dit enfant) 
+dans le dossier principal (considéré comme "parent")
+
+rmdir/nomdossierparent/nomdossieràsupprimer
+
+autre solution : pour supprimer tous les chemins liés
+à un dossier
+
+rm -v nomduchemin/nomduchemin
+-------------------------
+
+## creer un fichier
+
+touch test.txt
+git add test.txt
+git commit -m test.txt
+
+on a cree le document mais sans le mettre dans un dossier
+-------------------------
+
+## ajouter un document
+en exemple un document nommé index.html
+
+git add index.html
+git commit -m index.html
+git pull origin
+-------------------------
+
+## supprimer un fichier du dossier
+
+git rm nomdufichier
+git commit -m "commentaire"
+git push
+-------------------------
+
+## verifier si le doc est bon
+action à réaliser par exemple après un add .
+ou avant un commit -m
+
+git status
+-------------------------
+
+## créer une branche
+
+### Deux lignes: créer et basculer sur la nouvelle branch
+git branch nom_de_ma_branch_nouvelle
+git checkout nom_de_ma_branch_nouvelle
+
+### Une seule ligne: créer et basculer
+git checkout -b nom_de_ma_branch_nouvelle
+-------------------------
+
+## effacer une branche
+
+### Si la branch est local et n'est pas créée sur le repo distant
+git branch -d nom_de_ma_branch_local
+
+### Si la branch est présente sur le repo distant
+git push origin --delete nom_de_ma_branch_distante
+-------------------------
+
+## fusionner une branche
+
+-------------------------
+## changer de branche
+
+git checkout nom_de_ma_branch
+
+# GIT --version 2.23
+git switch nom_de_ma_branch
+-------------------------
+
+
+# Les actions git/github
+
+## faire la daily
+
+il faut upstream le document du formateur depuis son github
+vers notre terminal : il faut créer un dossier en local pour 
+déposer les fichiers importés
+
+on récupére donc son lien en cliquant sur le haut du dossier 
+sur un picto représentant deux carrés superposés
+
+git remote add upstream https://github.com/Simplon-hdf/daily-objectives-devinte-lil3.git
+git remote -v
+
+on l'importe sur notre local
+
+git pull upstream main
+git add .
+git commit -m "commentaire"
+git push
+-------------------------
+
+récuperer un doc en local
+pour une mise à jour (l'action de récupérer le dossier
+ayant déjà été faite auparavant)
+
+git clone https://leliendesondossier.git
+ls
+
+on ouvre le dossier pour le dailyobjective
+et va déposer sur notre dossier créé pour le daily
+
+cd dailyobjective...lil3
+git init
+git remove -v
+remote remove origin
+remote add origin git@github.com:votrenomsurubuntu/nomdudossierlocal.git
+git remote -v
+
+je depose en local
+
+git branch -M main
+git push -u origin main
+code .
+-------------------------
