@@ -1,6 +1,6 @@
 # Débuter sur Git et Github
 
-# Commandes
+## Commandes
 
 apt = npm
 apt install "nomlogiciel"
