@@ -224,7 +224,8 @@ git push
 
 -------------------------
 
-récuperer un doc en local
+##récuperer un doc en local
+
 pour une mise à jour (l'action de récupérer le dossier
 ayant déjà été faite auparavant)
 
@@ -247,4 +248,24 @@ git branch -M main
 git push -u origin main
 code .
 
--------------------------
+
+## envoyer un document vers un dossier sur github
+
+cd nomdossier
+ls (si vous avez besoin de voir le nom exact du dossier)
+
+git init
+cela permet de mettre le document ou dossier en .git
+
+git add .
+si vous voulez pointer un document précis :
+git reset HEAD nomdossier
+
+git commit -m nomdossier
+
+creer le dossier sur github (il editera un .git)
+et recuperer le lien, en ssh c'est mieux
+
+git remote add origin liendudossiergithub(en ssh)
+git remote -v
+git push origin main
