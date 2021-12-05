@@ -151,13 +151,49 @@ git push origin --delete nom_de_ma_branch_distante
 
 ## fusionner une branche
 
+un article détaillé :
+https://www.pierre-giraud.com/git-github-apprendre-cours/fusion-rebasage-git/#:~:text=Pour%20fusionner%20nos%20deux%20branches%2C%20on%20va%20se,master%20au%20niveau%20du%20commit%20point%C3%A9%20par%20test.
+
+### fusionner d'après une base
+on se positionne sur la base de la branche que l'on souhaite fusionner
+on se positionne sur la branche "main aussi appelée master sur certaines versions" et on fusionne avec une branche dite test
+
+git checkout
+git merge nombranchmain/nombranchtest
+
+ensuite on efface la branche test
+
+git branch -d
+
 -------------------------
+
+## fusionner deux branches avec un historique divergent
+
+git merge
+
+git crée un "instantané" avec les deux contenus en se basant sur le dernier commit
+du dossier de base et du dernier commit des dossiers que l'on veut fusionner
+et git émet ensuite un commit relatif aux 3 sources (donc plusieurs parents) : ce commit
+a pour nom "commit de fusion"
+
+si il y a conflit sur l'une des branches, il faudra le résoudre à part avant de retenter la fusion
+pour identifier le problème faire : git status
+
+une fois cela réalisé :
+
+git add
+git commit
+
+ce commit termine le commit dit de fusion
+
+-------------------------
+
 ## changer de branche
 
-git checkout nom_de_ma_branch
+git checkout nombranche
 
 GIT --version 2.23
-git switch nom_de_ma_branch
+git switch nombranche
 
 -------------------------
 
