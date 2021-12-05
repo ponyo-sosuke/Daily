@@ -57,7 +57,7 @@ Une fois acquis les commandes et compris les actions,
 on peut commencer à créer des alias pour simplifier 
 l'écriture.
 Lire ce post :
-https://git-scm.com/book/fr/v2/Les-bases-de-Git-Les-alias-Git
+[1] https://git-scm.com/book/fr/v2/Les-bases-de-Git-Les-alias-Git
 
 Pour exemple :
 
@@ -155,7 +155,7 @@ git push origin --delete nom_de_ma_branch_distante
 ## fusionner une branche
 
 un article détaillé :
-https://www.pierre-giraud.com/git-github-apprendre-cours/fusion-rebasage-git/#:~:text=Pour%20fusionner%20nos%20deux%20branches%2C%20on%20va%20se,master%20au%20niveau%20du%20commit%20point%C3%A9%20par%20test.
+[2] https://www.pierre-giraud.com/git-github-apprendre-cours/fusion-rebasage-git/#:~:text=Pour%20fusionner%20nos%20deux%20branches%2C%20on%20va%20se,master%20au%20niveau%20du%20commit%20point%C3%A9%20par%20test.
 
 ### fusionner d'après une base
 on se positionne sur la base de la branche que l'on souhaite fusionner
