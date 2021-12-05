@@ -95,8 +95,7 @@ dans le dossier principal (considéré comme "parent")
 
 rmdir/nomdossierparent/nomdossieràsupprimer
 
-autre solution : pour supprimer tous les chemins liés
-à un dossier
+autre solution : pour supprimer tous les chemins liés à un dossier
 
 rm -v nomduchemin/nomduchemin
 
