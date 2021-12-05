@@ -45,6 +45,7 @@ git status  / met à jour
 
 git visual / alias gitk
 / exemple $ git config --global alias.visual "!g
+
 -------------------------
 
 ## Création d'alias de commandes
@@ -59,6 +60,7 @@ Pour exemple :
 
 ajouter : $ git config --global alias."motàaliaser"
 cela donnera le raccourci git "2lettres" = gs / git status
+
 -------------------------
 
 
@@ -66,6 +68,7 @@ cela donnera le raccourci git "2lettres" = gs / git status
 # Memo des actions
 
 La routine Git sur notre terminal
+
 -------------------------
 
 ## creer un dossier
@@ -75,6 +78,7 @@ cd nomdudossier
 git init
 
 tu as un dossier vide
+
 -------------------------
 
 ## supprimer un dossier
@@ -93,6 +97,7 @@ autre solution : pour supprimer tous les chemins liés
 à un dossier
 
 rm -v nomduchemin/nomduchemin
+
 -------------------------
 
 ## creer un fichier
@@ -102,6 +107,7 @@ git add test.txt
 git commit -m test.txt
 
 on a cree le document mais sans le mettre dans un dossier
+
 -------------------------
 
 ## ajouter un document
@@ -110,6 +116,7 @@ en exemple un document nommé index.html
 git add index.html
 git commit -m index.html
 git pull origin
+
 -------------------------
 
 ## supprimer un fichier du dossier
@@ -117,6 +124,7 @@ git pull origin
 git rm nomdufichier
 git commit -m "commentaire"
 git push
+
 -------------------------
 
 ## verifier si le doc est bon
@@ -124,6 +132,7 @@ action à réaliser par exemple après un add .
 ou avant un commit -m
 
 git status
+
 -------------------------
 
 ## créer une branche
@@ -134,6 +143,7 @@ git checkout nom_de_ma_branch_nouvelle
 
 ### Une seule ligne: créer et basculer
 git checkout -b nom_de_ma_branch_nouvelle
+
 -------------------------
 
 ## effacer une branche
@@ -143,6 +153,7 @@ git branch -d nom_de_ma_branch_local
 
 ### Si la branch est présente sur le repo distant
 git push origin --delete nom_de_ma_branch_distante
+
 -------------------------
 
 ## fusionner une branche
@@ -154,6 +165,7 @@ git checkout nom_de_ma_branch
 
 # GIT --version 2.23
 git switch nom_de_ma_branch
+
 -------------------------
 
 
@@ -177,6 +189,7 @@ git pull upstream main
 git add .
 git commit -m "commentaire"
 git push
+
 -------------------------
 
 récuperer un doc en local
@@ -201,4 +214,5 @@ je depose en local
 git branch -M main
 git push -u origin main
 code .
+
 -------------------------
