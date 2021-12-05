@@ -46,7 +46,10 @@ git status  / met à jour
 git visual / alias gitk
 / exemple $ git config --global alias.visual "!g
 
+
 -------------------------
+
+
 
 ## Création d'alias de commandes
 
@@ -69,7 +72,7 @@ cela donnera le raccourci git "2lettres" = gs / git status
 
 La routine Git sur notre terminal
 
--------------------------
+
 
 ## creer un dossier
 
