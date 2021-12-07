@@ -14,9 +14,9 @@
   * [ ] Découvrir les principaux tags HTML et comprendre leur utilité
   * [ ] Savoir architecturer une page HTML basique
   * [ ] Comprendre le fonctionnement des attributs en HTML
-  * [ ] Savoir commenter dans une page HTML
-  * [ ] Découvrir le principe de parents/enfants
+  * [x] Savoir commenter dans une page HTML
+  * [x] Découvrir le principe de parents/enfants
   * [x] Découvrir le HTML5 sémantique
 * [ ] Comprendre la différence entre les liens relatifs et liens absolus
-* [ ] Créer sa première page HTML (voir brief CV)
+* [x] Créer sa première page HTML (voir brief CV)
 * [ ] Découvrir Emmet (utilité et fonctionnement)
