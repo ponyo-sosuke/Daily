@@ -2,7 +2,7 @@
 
 ## Phase 0 - La prairie
 
-### Jeudi 01/12/2021
+### Jeudi 02/12/2021
 
 
 * [x] Création de compte Github

@@ -2,7 +2,7 @@
 
 ## Phase 0 - La prairie
 
-### Vendredi 02/12/2021
+### Vendredi 03/12/2021
 
 
 * [x] Créer son premier repo Github
