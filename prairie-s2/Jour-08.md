@@ -9,8 +9,8 @@
   * [ ] Comprendre le fonctionnement des tableaux en HTML5 et savoir les manipuler
   * [ ] Comprendre le fonctionnement des inputs en HTML5 et savoir les manipuler
   * [ ] Découvrir les formulaires et leur validation en HTML5
-  * [ ] Comprendre l'utilité et le fonctionnement des labels en HTML5
-  * [ ] Comprendre le fonctionnement des dropdowns, boutons radio, et checkbox
+  * [x] Comprendre l'utilité et le fonctionnement des labels en HTML5
+  * [x] Comprendre le fonctionnement des dropdowns, boutons radio, et checkbox
   * [X] Savoir insérer une vidéo dans une page HTML (Youtube, locale)
   * [X] Créer son premier formulaire HTML (voir brief)
 
