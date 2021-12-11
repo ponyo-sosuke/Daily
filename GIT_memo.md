@@ -11,10 +11,10 @@ cd "nomdossier" / permet de rentrer dans un dossier
 cd . 
 cd .. / permet de revenir au dossier au-dessus
 
-ls  / liste les documents présents
-ls l -a / liste les fichiers cachés
-ls -la  / liste les fichiers cachés
-ls -lh  / voir la liste des dossiers sans fichiers cachés
+ls  / liste les documents présents<br>
+ls l -a / liste les fichiers cachés<br>
+ls -la  / liste les fichiers cachés<br>
+ls -lh  / voir la liste des dossiers sans fichiers cachés<br>
 la  / voir tout
 
 mkdir / creer un dossier "make directory"
@@ -26,37 +26,37 @@ touch "nomfichier"  / cree un fichier
 
 <b>S'employe avec "git" en début de commande :</b>
 
-git add .  / ajoute tout ce qui est au niveau de la branche où on se trouve
+git add .  / ajoute tout ce qui est au niveau de la branche où on se trouve<br>
 git add "nomdossier"  / ajoute le dossier sur la branche où on se trouve
 
 git branch -a  / liste toutes les branches
 
 git branch -M main  / transforme la branche de master en main
 
-git branch en alias devient
+git branch en alias devient...<br>
 $ git config --global alias.br = git br
 
-git commit -a  / permet de valider
-git commit -m "commentaire"  / valide plus commentaire de la modification apportée
-/ exemple pour visualiser le dernier commit
-en plus simple
+git commit -a  / permet de valider<br>
+git commit -m "commentaire"  / valide plus commentaire de la modification apportée<br>
+/ exemple pour visualiser le dernier commit<br>
+en plus simple<br>
 $ git last
 
 git init  / initialise
 
-git pull  / importe ou met à jour
+git pull  / importe ou met à jour<br>
 git pull upstream main  / importe un dossier sur notre branche principale
 
-git push  / pousse le dossier ou met à jour
+git push  / pousse le dossier ou met à jour<br>
 git push -u origin
 
-git remote -v  / verbose  concerne notre dossier
+git remote -v  / verbose  concerne notre dossier<br>
 git rm "nomfichier"  / supprime un fichier du dossier
 
-gs  / git status (alias)
+gs  / git status (alias)<br>
 git status  / met à jour et permet de voir les dossiers modifiés
 
-git visual / alias gitk
+git visual / alias gitk<br>
 / exemple $ git config --global alias.visual "!g
 
 
@@ -74,7 +74,7 @@ Lire ce post :
 
 Pour exemple :
 
-ajouter : $ git config --global alias."motàaliaser"
+ajouter : $ git config --global alias."motàaliaser"<br>
 cela donnera le raccourci git "2lettres" = gs / git status
 
 -------------------------
@@ -89,8 +89,8 @@ La routine Git sur notre terminal
 
 ## creer un dossier
 
-mkdir nomdudossier
-cd nomdudossier
+mkdir nomdudossier<br>
+cd nomdudossier<br>
 git init
 
 tu as un dossier vide
@@ -116,8 +116,8 @@ rm -v nomduchemin/nomduchemin
 
 ## creer un fichier
 
-touch test.txt
-git add test.txt
+touch test.txt<br>
+git add test.txt<br>
 git commit -m test.txt
 
 on a cree le document mais sans le mettre dans un dossier
@@ -126,15 +126,15 @@ on a cree le document mais sans le mettre dans un dossier
 ## ajouter un document
 en exemple un document nommé index.html
 
-git add index.html
-git commit -m index.html
+git add index.html<br>
+git commit -m index.html<br>
 git pull origin
 
 
 ## supprimer un fichier du dossier
 
-git rm nomdufichier
-git commit -m "commentaire"
+git rm nomdufichier<br>
+git commit -m "commentaire"<br>
 git push
 
 
@@ -149,7 +149,7 @@ git status
 
 ### Deux lignes: créer et basculer sur la nouvelle branch
 
-git branch nombranchnouvelle
+git branch nombranchnouvelle<br>
 git checkout nombranchnouvelle
 
 ### Une seule ligne: créer et basculer
@@ -176,10 +176,10 @@ un article détaillé :
 
 ### fusionner d'après une base
 
-on se positionne sur la base de la branche que l'on souhaite fusionner
+on se positionne sur la base de la branche que l'on souhaite fusionner<br>
 on se positionne sur la branche "main aussi appelée master sur certaines versions" et on fusionne avec une branche dite test
 
-git checkout
+git checkout<br>
 git merge nombranchmain/nombranchtest
 
 ensuite on efface la branche test
@@ -202,7 +202,7 @@ pour identifier le problème faire : git status
 
 une fois cela réalisé :
 
-git add
+git add<br>
 git commit
 
 ce commit termine le commit dit de fusion
@@ -230,14 +230,14 @@ déposer les fichiers importés
 on récupére donc son lien en cliquant sur le haut du dossier 
 sur un picto représentant deux carrés superposés
 
-git remote add upstream https://github.com/Simplon-hdf/daily-objectives-devinte-lil3.git
+git remote add upstream https://github.com/Simplon-hdf/daily-objectives-devinte-lil3.git <br>
 git remote -v
 
 on l'importe sur notre local
 
-git pull upstream main
-git add .
-git commit -m "commentaire"
+git pull upstream main<br>
+git add .<br>
+git commit -m "commentaire"<br>
 git push
 
 -------------------------
@@ -247,45 +247,45 @@ git push
 pour une mise à jour (l'action de récupérer le dossier
 ayant déjà été faite auparavant)
 
-git clone https://leliendesondossier.git
+git clone https://leliendesondossier.git <br>
 ls
 
 on ouvre le dossier pour le dailyobjective
 et va déposer sur notre dossier créé pour le daily
 
-cd dailyobjective...lil3
-git init
-git remove -v
-remote remove origin
-remote add origin git@github.com:votrenomsurubuntu/nomdudossierlocal.git
+cd dailyobjective...lil3<br>
+git init<br>
+git remove -v<br>
+remote remove origin<br>
+remote add origin git@github.com:votrenomsurubuntu/nomdudossierlocal.git<br>
 git remote -v
 
 je depose en local
 
-git branch -M main
-git push -u origin main
+git branch -M main<br>
+git push -u origin main<br>
 code .
 
 
 ## envoyer un document vers un dossier sur github
 
-cd nomdossier
+cd nomdossier<br>
 ls (si vous avez besoin de voir le nom exact du dossier)
 
-git init
+git init<br>
 cela permet de mettre le document ou dossier en .git
 
-git add .
-si vous voulez pointer un document précis :
+git add .<br>
+si vous voulez pointer un document précis :<br>
 git reset HEAD nomdossier
 
 git commit -m nomdossier
 
-creer le dossier sur github (il editera un .git)
+creer le dossier sur github (il editera un .git)<br>
 et recuperer le lien, en ssh c'est mieux
 
-git remote add origin liendudossiergithub(en ssh)
-git remote -v
+git remote add origin liendudossiergithub(en ssh)<br>
+git remote -v<br>
 git push origin main
 
 ____________
