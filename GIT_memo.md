@@ -1,21 +1,33 @@
 # Débuter sur Git et Github
 
-## Commandes
+## Commandes sur le terminal Git
 
 apt = npm
 apt install "nomlogiciel"
 'pour forcer' => sudo apt install "nomdulogiciel"
 
 cat  / interroge
-cd .
+cd "nomdossier" / permet de rentrer dans un dossier
+cd . 
+cd .. / permet de revenir au dossier au-dessus
 
 ls  / liste les documents présents
+ls l -a / liste les fichiers cachés
+ls -la  / liste les fichiers cachés
 ls -lh  / voir la liste des dossiers sans fichiers cachés
 la  / voir tout
 
+mkdir / creer un dossier "make directory"
+
 rm -rf nomdossier  / efface le dossier
 
-git add .  / ajoute
+touch "nomfichier"  / cree un fichier
+<br>
+
+<b>S'employe avec "git" en début de commande :</b>
+
+git add .  / ajoute tout ce qui est au niveau de la branche où on se trouve
+git add "nomdossier"  / ajoute le dossier sur la branche où on se trouve
 
 git branch -a  / liste toutes les branches
 
@@ -24,6 +36,7 @@ git branch -M main  / transforme la branche de master en main
 git branch en alias devient
 $ git config --global alias.br = git br
 
+git commit -a  / permet de valider
 git commit -m "commentaire"  / valide plus commentaire de la modification apportée
 / exemple pour visualiser le dernier commit
 en plus simple
@@ -31,17 +44,17 @@ $ git last
 
 git init  / initialise
 
-git pull
-git pull upstream main
+git pull  / importe ou met à jour
+git pull upstream main  / importe un dossier sur notre branche principale
 
-git push  / pousse le dossier
+git push  / pousse le dossier ou met à jour
 git push -u origin
 
 git remote -v  / verbose  concerne notre dossier
 git rm "nomfichier"  / supprime un fichier du dossier
 
 gs  / git status (alias)
-git status  / met à jour
+git status  / met à jour et permet de voir les dossiers modifiés
 
 git visual / alias gitk
 / exemple $ git config --global alias.visual "!g
@@ -84,6 +97,7 @@ tu as un dossier vide
 
 
 ## supprimer un dossier
+
 action à réaliser si on ne souhaite pas 
 conserver tout le contenu d'un dossier
 ou supprimer un dossier vide 
@@ -134,20 +148,24 @@ git status
 ## créer une branche
 
 ### Deux lignes: créer et basculer sur la nouvelle branch
-git branch nom_de_ma_branch_nouvelle
-git checkout nom_de_ma_branch_nouvelle
+
+git branch nombranchnouvelle
+git checkout nombranchnouvelle
 
 ### Une seule ligne: créer et basculer
-git checkout -b nom_de_ma_branch_nouvelle
+
+git checkout -b nombranchnouvelle
 
 
 ## effacer une branche
 
 ### Si la branch est local et n'est pas créée sur le repo distant
-git branch -d nom_de_ma_branch_local
+
+git branch -d nombranchlocale
 
 ### Si la branch est présente sur le repo distant
-git push origin --delete nom_de_ma_branch_distante
+
+git push origin --delete nombranchdistante
 
 -------------------------
 
@@ -157,6 +175,7 @@ un article détaillé :
 [2] https://www.pierre-giraud.com/git-github-apprendre-cours/fusion-rebasage-git/#:~:text=Pour%20fusionner%20nos%20deux%20branches%2C%20on%20va%20se,master%20au%20niveau%20du%20commit%20point%C3%A9%20par%20test.
 
 ### fusionner d'après une base
+
 on se positionne sur la base de la branche que l'on souhaite fusionner
 on se positionne sur la branche "main aussi appelée master sur certaines versions" et on fusionne avec une branche dite test
 
@@ -223,7 +242,7 @@ git push
 
 -------------------------
 
-##récuperer un doc en local
+## Récuperer un doc en local
 
 pour une mise à jour (l'action de récupérer le dossier
 ayant déjà été faite auparavant)
@@ -270,3 +289,4 @@ git remote -v
 git push origin main
 
 ____________
+<br>
