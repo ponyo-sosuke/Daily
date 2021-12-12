@@ -18,7 +18,10 @@ cd "nomdossier" / permet de rentrer dans un dossier
 cd . 
 cd .. / permet de revenir au dossier au-dessus
 
-cp  / copier du contenu
+cp  / copier du contenu<br>
+cp -r permet de copier le dossier et tout son contenu<br>
+ex: cp r- destination/ projet1<br>
+il copie tout le dossier destination dans le dossier projet1
 
 ls  / liste les documents présents<br>
 ls l -a / liste les fichiers cachés<br>
