@@ -2,6 +2,13 @@
 
 ## Commandes sur le terminal Git
 
+"*" / joker ou wildcard
+Dans ce nouvel exemple, je suis dans mon répertoire test, qui contient plusieurs sous-répertoires et fichiers (dossier, fichier.txt, mon, ‘second  test’, ‘troisième test’, ‘un fichier avec espace.txt').
+
+Parmi eux, le répertoire appelé “dossier” ne contient rien du tout.
+
+Lorsque je fais mv * dossier, je demande au terminal de déplacer (mv) tout ce qui correspond à * (c’est-à-dire, absolument tout !) dans le répertoire “dossier”.
+
 apt = npm
 apt install "nomlogiciel"
 'pour forcer' => sudo apt install "nomdulogiciel"
@@ -11,6 +18,8 @@ cd "nomdossier" / permet de rentrer dans un dossier
 cd . 
 cd .. / permet de revenir au dossier au-dessus
 
+cp  / copier du contenu
+
 ls  / liste les documents présents<br>
 ls l -a / liste les fichiers cachés<br>
 ls -la  / liste les fichiers cachés<br>
@@ -19,6 +28,13 @@ la  / voir tout
 
 mkdir / creer un dossier "make directory"
 
+mv  / move = bouger un dossier ou fichier
+s'écrit mv text.html projet1 (mettre le fichier dans le dossier)<br>
+soit le fichier et le nom de l'endroit où mettre le fichier<br>
+s'écrit mv text.html forms.html (renomme le fichier du premier nom au second)
+
+rm  / remove = supprimer<br>
+rm -r  / effacer un dossier<br>
 rm -rf nomdossier  / efface le dossier
 
 touch "nomfichier"  / cree un fichier
